@@ -61,10 +61,10 @@ export default {
     padding-top: 38vh;
     height: 100vh;
     img {
-      z-index: 0;
+      z-index: 10;
       pointer-events: none;
       position: absolute;
-      opacity: 38%;
+      opacity: 62%;
       top: 0;
       right: 0;
       height: 100vh;

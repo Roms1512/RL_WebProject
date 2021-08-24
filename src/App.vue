@@ -83,7 +83,7 @@ export default {
     }
   }
   .nav-bar {
-    z-index: 10;
+    z-index: 20;
     a {
       font-weight: bold;
       color: #fff;

@@ -25,8 +25,8 @@
           <h4>Site Sur Mesure</h4>
           <h5>La réalisation de votre <span>site web sur-mesure</span> vous permet de créer un <span>site unique</span> en <span>termes de fonctionnalités</span>. De cette manière, vous pouvez <span>présenter très précisément</span> vos <span>produits</span> ou <span>services</span> ou encore <span>automatiser certaines actions</span>.<br>
           <span class="subline">Avantage</span> :<br>
-            -	Vous avez <span>carte blanche avec le designer</span> qui prendra en compte toutes vos demandes concernant <span>le design</span>, <span>les animations</span>, <span>les fonctionnalités</span>, etc… <br>
-            -	Vous aurez également si besoin est, <span>les services</span> de notre <a href="https://www.instagram.com/lenylaurenti/" target="__blank">Photographe/Vidéaste</a></h5>
+            -	Vous avez <span>carte blanche avec le designer</span> qui prendra en compte toutes vos demandes concernant <span>le design</span>, <span>les animations</span>, <span>les fonctionnalités</span>, etc… .<br>
+            -	Vous aurez également si besoin est, <span>les services</span> de notre <a href="https://www.instagram.com/lenylaurenti/" target="__blank">Photographe/Vidéaste</a>.</h5>
         </div>
       </div>
     </section>
@@ -86,10 +86,10 @@ export default {
     padding-top: 38vh;
     height: 100vh;
     img {
-      z-index: 0;
+      z-index: 10;
       pointer-events: none;
       position: absolute;
-      opacity: 38%;
+      opacity: 62%;
       top: 0;
       right: 0;
       height: 100vh;
@@ -133,15 +133,16 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       img {
+        z-index: 10;
         position: absolute;
         height: 60vh;
         &:nth-child(1) {
-          opacity: 30%;
+          opacity: 70%;
           top: 22vh;
           left: -20vw;
         }
         &:nth-child(2) {
-          opacity: 25%;
+          opacity: 75%;
           height: 70vh;
           top: 46vh;
           right: -36vw;

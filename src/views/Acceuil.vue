@@ -90,10 +90,10 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     img {
-      z-index: 0;
+      z-index: 10;
       pointer-events: none;
       position: absolute;
-      opacity: 38%;
+      opacity: 62%;
       top: 0;
       right: 0;
       height: 100vh;
@@ -168,10 +168,11 @@ export default {
     background: #0E0E0E;
     padding-top: 5vh;
     img {
+      z-index: 10;
       pointer-events: none;
       position: absolute;
       height: 100vh;
-      opacity: 20%;
+      opacity: 80%;
       right: 0;
       top: 0;
     }
@@ -196,6 +197,7 @@ export default {
         display: flex;
         align-items: center;
         img {
+          z-index: 20;
           position: relative;
           height: 25vh;
           opacity: 100%;

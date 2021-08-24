@@ -14,7 +14,6 @@ export default createStore({
   },
   mutations: {
     submitForm() {
-      console.log('fonction envoyer');
 
       // Recuperation des éléments
       const form = document.getElementById('contact_form');
@@ -24,15 +23,12 @@ export default createStore({
       let email = document.getElementById('email');
       let sujet = document.getElementById('sujet');
       let message = document.getElementById('message');
+
+      console.log(form, submit);
       
       // Regex
       let regexPseudo = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/ // /^[A-Za-z0-9][a-z0-9]{3,20}/ // Pseudo
       let regexMail = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/ // Adresse Email
-      // let regexPassword = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/ // Mots de Passe
-      
-      console.log(form);
-      console.log(submit);
-
       
       if (
         regexPseudo.test(pseudo.value) &&
@@ -54,13 +50,9 @@ export default createStore({
             localStorage.removeItem('perso');
             utilisateur.push(perso)
             localStorage.setItem(USER_KEY, JSON.stringify(utilisateur));
-            console.log('Stocker Donnée Perso dans le LocalStorage');
           } else {
-            console.log('bonsoir');
+            console.log('Erreur de l\'envoie');
           }
-          
-          console.log('Merci de vous être inscrit ! Dans le local Storage');
-        
         } else {
           console.log(regexPseudo.test(pseudo.value));
           console.log(regexMail.test(email.value));

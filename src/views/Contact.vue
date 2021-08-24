@@ -26,18 +26,17 @@
       </div>
       <h3>SI VOUS AVEZ DES QUESTIONS,<br>ENVOYER NOUS UN MESSAGE</h3>
       <form id="contact_form" @submit.prevent="sendEmail">
-        <input type="hidden" name="contact_number">
         <input type="text"  id="nom" name="user_name" placeholder="NOM, PRÉNOM" aria-label="Nom Prenom" required>
         <input type="email" id="email" name="user_email" placeholder="E-MAIL" aria-label="Email" required>
         <select name="sujet" id="sujet" aria-label="Sujet du message" required>
           <option value="">SUJET</option>
-          <option value="devis">{{ sujet.devis }}</option>
-          <option value="création-pro">{{ sujet.business }}</option>
-          <option value="création-perso">{{ sujet.perso }}</option>
-          <option value="reprise">{{ sujet.reprise }}</option>
-          <option value="maintenance">{{ sujet.maintenance }}</option>
-          <option value="referencement">{{ sujet.referencement }}</option>
-          <option value="autre">{{ sujet.autre }}</option>
+          <option value="Faire un Devis">{{ sujet.devis }}</option>
+          <option value="Création Site Pro">{{ sujet.business }}</option>
+          <option value="Création Site Perso">{{ sujet.perso }}</option>
+          <option value="Reprise de mon Site">{{ sujet.reprise }}</option>
+          <option value="Maintenance de mon Site">{{ sujet.maintenance }}</option>
+          <option value="Référencement">{{ sujet.referencement }}</option>
+          <option value="Autre Demande">{{ sujet.autre }}</option>
         </select>
         <textarea name="message" id="message" maxlength="1000" placeholder="MESSAGE ..." aria-label="Ecrivez votre message" required></textarea>
         <button @click="submitForm" id="submit">ENVOYEZ !</button>
@@ -90,7 +89,7 @@ export default {
       z-index: 0;
       pointer-events: none;
       position: absolute;
-      opacity: 38%;
+      opacity: 62%;
       bottom: 0;
       right: 0;
       height: 90vh;
