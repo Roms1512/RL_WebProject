@@ -8,7 +8,7 @@
     </header>
     <section>
       <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">QUELQUES PROJETS RÉALISÉS<br>PAR NOS SOINS</h2>
-      <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Chaque projet est réalisés sur mesures pour<br>correspondre à vos besoins.<br><span>Votre Premier Devis est GRATUIT !</span></h5>
+      <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Chaque projet est réalisés sur mesures pour<br>correspondre à vos besoins.<br><span>DEVIS GRATUIT !</span></h5>
       <div class="projets">
         <div class="projet" data-aos="fade-in" data-aos-duration="2500" data-aos-offset="350" data-aos-once="true">
           <img src="@/assets/PhotoProjet/1.png" alt="projet 1">
@@ -69,6 +69,10 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: Montserrat;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}
 #acceuil {
   position: absolute;
   width: 100%;
@@ -90,10 +94,9 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     img {
-      z-index: 10;
       pointer-events: none;
       position: absolute;
-      opacity: 62%;
+      opacity: 0.38;
       top: 0;
       right: 0;
       height: 100vh;
@@ -172,7 +175,7 @@ export default {
       pointer-events: none;
       position: absolute;
       height: 100vh;
-      opacity: 80%;
+      opacity: 0.2;
       right: 0;
       top: 0;
     }
@@ -200,7 +203,7 @@ export default {
           z-index: 20;
           position: relative;
           height: 25vh;
-          opacity: 100%;
+          opacity: 1;
           zoom: 0.5;
         }
         .text-competence {

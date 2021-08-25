@@ -7,7 +7,7 @@
     <section>
       <h5 class="description">
         <span class="debut">RL WebProject :</span> Nous sommes actuellement une micro-entreprise de développement web basé à <span>Embrun</span>, au cœur des <span>Hautes Alpes</span>.<br>
-        Nous vous proposons un service de <span>Création</span> ou de <span>Reprise</span> de Site Web avec l’assurance de respecter les <span>recommandations SEO de Google</span>. Nous travaillons en étroite collaboration avec des <span>designers freelance</span> et un <a href="https://www.instagram.com/lenylaurenti/" target="__blank">photographe / vidéaste Professionnel</a>, ce qui nous permet de vous garantir un <span>design moderne</span> avec des <a href="https://www.instagram.com/lenylaurenti/" target="__blank">photos et des vidéos de grande qualité</a>.
+        Nous vous proposons un service de <span>Création</span> ou de <span>Reprise</span> de Site Web avec l’assurance de respecter les <span>recommandations SEO de Google</span>. Nous travaillons en étroite collaboration avec des <span>designers freelance</span> et un <a class="subline" title="Cliquer ici pour voir ces photos" href="https://www.instagram.com/lenylaurenti/" target="__blank">photographe / vidéaste Professionnel</a>, ce qui nous permet de vous garantir un <span>design moderne</span> avec des <a title="Cliquer ici pour voir ces photos" href="https://www.instagram.com/lenylaurenti/" target="__blank">photos et des vidéos de grande qualité</a>.
       </h5>
       <div class="all-service">
         <img src="@/assets/PhotoFond/4.png" alt="Écouteur et Téléphone Apple" data-aos="slide-right" data-aos-duration="1500" data-aos-offset="300" data-aos-once="true" data-aos-delay="500">
@@ -24,9 +24,9 @@
         <div class="single-service" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="800" data-aos-once="true">
           <h4>Site Sur Mesure</h4>
           <h5>La réalisation de votre <span>site web sur-mesure</span> vous permet de créer un <span>site unique</span> en <span>termes de fonctionnalités</span>. De cette manière, vous pouvez <span>présenter très précisément</span> vos <span>produits</span> ou <span>services</span> ou encore <span>automatiser certaines actions</span>.<br>
-          <span class="subline">Avantage</span> :<br>
+          <span class="bold">Avantage</span> :<br>
             -	Vous avez <span>carte blanche avec le designer</span> qui prendra en compte toutes vos demandes concernant <span>le design</span>, <span>les animations</span>, <span>les fonctionnalités</span>, etc… .<br>
-            -	Vous aurez également si besoin est, <span>les services</span> de notre <a href="https://www.instagram.com/lenylaurenti/" target="__blank">Photographe/Vidéaste</a>.</h5>
+            -	Vous aurez également si besoin est, <span>les services</span> de notre <a title="Cliquer ici pour voir ces photos" class="subline" href="https://www.instagram.com/lenylaurenti/" target="__blank">Photographe/Vidéaste</a>.</h5>
         </div>
       </div>
     </section>
@@ -75,6 +75,10 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: Montserrat;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}
 #services {
   height: 100vh;
   background: linear-gradient(to right, #2A2A2A, #010101);
@@ -89,7 +93,7 @@ export default {
       z-index: 10;
       pointer-events: none;
       position: absolute;
-      opacity: 62%;
+      opacity: 0.57;
       top: 0;
       right: 0;
       height: 100vh;
@@ -122,6 +126,9 @@ export default {
       }
       a {
         font-weight: 400;
+        &.subline {
+          text-decoration: underline 0.5px;
+        }
       }
     }
     .all-service {
@@ -137,18 +144,19 @@ export default {
         position: absolute;
         height: 60vh;
         &:nth-child(1) {
-          opacity: 70%;
+          opacity: 0.30;
           top: 22vh;
           left: -20vw;
         }
         &:nth-child(2) {
-          opacity: 75%;
+          opacity: 0.25;
           height: 70vh;
           top: 46vh;
           right: -36vw;
         }
       }
       .single-service {
+        z-index: 10;
         position: relative;
         width: 26vw;
         text-align: left;
@@ -165,9 +173,12 @@ export default {
           font-size: medium;
           line-height: 2.5vh;
           span, a {
-            font-weight: 500;
+            font-weight: 400;
             &.subline {
               text-decoration: underline;
+            }
+            &.bold {
+              font-weight: 700;
             }
           }
         }

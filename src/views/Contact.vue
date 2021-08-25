@@ -75,6 +75,10 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: Montserrat;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}
 #contact {
   height: 100vh;
   background: linear-gradient(to right, #2A2A2A, #010101);
@@ -89,7 +93,7 @@ export default {
       z-index: 0;
       pointer-events: none;
       position: absolute;
-      opacity: 62%;
+      opacity: 0.38;
       bottom: 0;
       right: 0;
       height: 90vh;
@@ -179,6 +183,9 @@ export default {
         font-weight: bold;
         border: 1px solid #fff;
         text-align: center;
+        &:active {
+          zoom: 0.98;
+        }
       }
     }
   }
@@ -285,6 +292,9 @@ export default {
   }
   @media screen and(max-width: 414px), (max-height: 414px) {
     header {
+      h1 {
+        font-size: xx-large;
+      }
       img {
         zoom: .5;
       }

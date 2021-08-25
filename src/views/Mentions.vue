@@ -20,7 +20,7 @@
         </div>
         <div class="sous-titre-mention">
           <h4>Information et libertés</h4>
-          <h5>Conformément à la loi du 6 janvier 1978 relative à l'informatique, vous disposez d'un droit d'accès et de rectification à vos données personnelles.</h5>
+          <h5>Conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, vous disposez d'un droit d'accès et de rectification à vos données personnelles.</h5>
         </div>
       </div>
       <div class="colonne-2">
@@ -50,6 +50,10 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: Montserrat;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}
 #mention {
   height: 100vh;
   background: linear-gradient(to right, #2A2A2A, #010101);
@@ -64,7 +68,7 @@ export default {
       z-index: 10;
       pointer-events: none;
       position: absolute;
-      opacity: 62%;
+      opacity: 0.62;
       top: 0;
       right: 0;
       height: 100vh;
