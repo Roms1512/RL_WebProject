@@ -52,6 +52,8 @@ export default {
 <style lang="scss">
 #mention {
   height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#2A2A2A), to(#010101));
+  background: -o-linear-gradient(left, #2A2A2A, #010101);
   background: linear-gradient(to right, #2A2A2A, #010101);
   position: relative;
   top: -18vh;
@@ -79,6 +81,8 @@ export default {
     background: #0E0E0E;
     height: 83vh;
     padding: 3vh 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     .colonne-1, .colonne-2 {
       margin-top: 5vh;
@@ -132,7 +136,10 @@ export default {
     }
     section {
       height: 130vh;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       .colonne-1, .colonne-2 {
         width: 90vw;
         h4 {

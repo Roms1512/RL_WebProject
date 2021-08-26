@@ -94,6 +94,8 @@ export default {
 <style lang="scss">
 #services {
   height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#2A2A2A), to(#010101));
+  background: -o-linear-gradient(left, #2A2A2A, #010101);
   background: linear-gradient(to right, #2A2A2A, #010101);
   position: relative;
   top: -18vh;
@@ -117,6 +119,8 @@ export default {
       color: #fff;
     }
     h5 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       font-weight: 300;
       font-size: x-large;
@@ -148,7 +152,8 @@ export default {
       a {
         font-weight: 400;
         &.subline {
-          text-decoration: underline 0.5px;
+          -webkit-text-decoration: underline 0.5px;
+                  text-decoration: underline 0.5px;
         }
       }
     }
@@ -157,9 +162,16 @@ export default {
       width: 60vw;
       height: 110vh;
       margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       img {
         z-index: 10;
         position: absolute;
@@ -217,9 +229,14 @@ export default {
     .competences {
       margin: auto;
       width: 60vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       .single-competence {
         position: relative;
         width: 20vw;

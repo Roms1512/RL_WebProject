@@ -31,11 +31,6 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face{
-  font-family:"alphacentauri-medium";
-  src: url("/Font/Alphacentauri-MVY4p.ttf") format("woff"),format("opentype"), format("truetype");
-}
-
 #footer {
   background: #89815F;
   height: 17vh;
@@ -68,19 +63,31 @@ export default {
   }
   .droit {
     height: 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     .copyright, .design {
       font-size: small;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       a {
         font-weight: bold;
       }
     }
     .copyright {
       .rights {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         i {
           margin-top: 3px;
@@ -129,8 +136,13 @@ export default {
     .droit {
       margin-top: 2.5vh;
       height: 4vh;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
   }
   @media screen and(max-width:414px), (max-height: 414px) {
@@ -148,8 +160,13 @@ export default {
         font-size: xx-small !important;
       }
       .copyright {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
       }
       .design {
         margin-top: 10px;

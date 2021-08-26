@@ -123,6 +123,8 @@ export default {
 <style lang="scss">
 #portefolio {
   height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#2A2A2A), to(#010101));
+  background: -o-linear-gradient(left, #2A2A2A, #010101);
   background: linear-gradient(to right, #2A2A2A, #010101);
   position: relative;
   top: -18vh;
@@ -146,6 +148,8 @@ export default {
       color: #fff;
     }
     h5 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       font-weight: 300;
       font-size: x-large;
@@ -160,6 +164,8 @@ export default {
       margin: auto;
       height: 120vh;
       width: 80vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       .colonne-1, .colonne-2 {
         margin: auto;
@@ -192,33 +198,45 @@ export default {
           background: #c1c1c1;
           img {
             margin-top: 3vh;
-            object-fit: cover;
-            object-position: center top;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: center top;
+               object-position: center top;
             height: 97%;
             width: 90%;
           }
         }
         .colonne-2 {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: space-between;
-          flex-direction: column;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           .img {
             background: #c1c1c1;
             height: 26vh;
             img {
-              object-fit:cover;
+              -o-object-fit:cover;
+                 object-fit:cover;
               height: 26vh;
               width: 90%;
             }
           }
           .img-1 {
             img {
-              object-position: center top;
+              -o-object-position: center top;
+                 object-position: center top;
             }
           }
           .img-2 {
             img {
-              object-position: center bottom;
+              -o-object-position: center bottom;
+                 object-position: center bottom;
             }
           }
           .description-projet {
@@ -229,26 +247,36 @@ export default {
     }
     .projet-2 {
         .colonne-1 {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: space-between;
-          flex-direction: column;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           .img {
             background: #262626;
             height: 26vh;
             img {
-              object-fit:cover;
+              -o-object-fit:cover;
+                 object-fit:cover;
               height: 26vh;
               width: 90%;
             }
           }
           .img-1 {
             img {
-              object-position: center top;
+              -o-object-position: center top;
+                 object-position: center top;
             }
           }
           .img-2 {
             img {
-              object-position: center top;
+              -o-object-position: center top;
+                 object-position: center top;
             }
           }
           .description-projet {
@@ -260,8 +288,10 @@ export default {
           background: #262626;
           img {
             margin-top: 3vh;
-            object-fit: cover;
-            object-position: center top;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: center top;
+               object-position: center top;
             height: 97%;
             width: 90%;
           }
@@ -324,7 +354,10 @@ export default {
     section {
       padding-bottom: 5vh;
       .projet-1 {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         height: 88vh;
         margin-bottom: 5vh;
         .colonne-1, .colonne-2 {
@@ -349,7 +382,10 @@ export default {
         }
       }
       .projet-2 {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         height: 88vh;
         margin-bottom: 5vh;
         margin-top: 5vh;

@@ -81,14 +81,23 @@ export default {
     margin-top: 5vh;
   }
   header {
+    background: -webkit-gradient(linear, right top, left top, from(#2A2A2A), to(#010101));
+    background: -o-linear-gradient(right, #2A2A2A, #010101);
     background: linear-gradient(to left, #2A2A2A, #010101);
     text-align: left;
     margin-left: 10vw;
     padding-top: 38vh;
     height: 118vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     img {
       pointer-events: none;
       position: absolute;
@@ -137,15 +146,21 @@ export default {
       margin: 5vh auto;
       width: 85vw;
       height: 80vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       .projet {
         position: relative;
         width: 23vw;
         height: 70vh;
         img {
-          object-fit: cover;
-          object-position: center top;
+          -o-object-fit: cover;
+             object-fit: cover;
+          -o-object-position: center top;
+             object-position: center top;
           width: 23vw;
           height: 70vh;
         }
@@ -186,15 +201,24 @@ export default {
       height: 60vh;
       width: 80vw;
       margin:4vh auto 5vh auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       .competence {
         position: relative;
         width: 40vw;
         height: 25vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         img {
           z-index: 20;
           position: relative;
@@ -225,15 +249,22 @@ export default {
 
   @media screen and(max-width: 1366px) {
     header {
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
 
     section {
       position: relative;
       height: 300vh;
       .projets {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         .projet {
           width: 85vw;
           height: 90vh;
@@ -255,8 +286,12 @@ export default {
       height: 100vh;
       .competences {
         height: 70vh;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
         .competence {
           width: 100%;
         }

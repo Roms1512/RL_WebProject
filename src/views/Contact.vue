@@ -112,6 +112,7 @@ export default {
       bottom: 0;
       right: 0;
       height: 90vh;
+      
     }
     h1 {
       font-weight: 600;
@@ -119,6 +120,8 @@ export default {
       color: #fff;
     }
     h5 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       font-weight: 300;
       font-size: x-large;
@@ -141,6 +144,8 @@ export default {
       width: 60vw;
       height: 20vh;
       margin: 10vh auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;    
       .info {
         width: 20vw;
@@ -171,9 +176,16 @@ export default {
       margin: auto;
       width: 60vw;
       height: 60vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       input, select, textarea {
         font-family: 'Montserrat';
         font-weight: 500;
@@ -182,6 +194,26 @@ export default {
         border: none;
         background: #222222;
         padding:10px 20px;
+        &::-webkit-input-placeholder {
+          color: #89815F;
+          font-family: 'Montserrat';
+          font-weight: 500;
+        }
+        &::-moz-placeholder {
+          color: #89815F;
+          font-family: 'Montserrat';
+          font-weight: 500;
+        }
+        &:-ms-input-placeholder {
+          color: #89815F;
+          font-family: 'Montserrat';
+          font-weight: 500;
+        }
+        &::-ms-input-placeholder {
+          color: #89815F;
+          font-family: 'Montserrat';
+          font-weight: 500;
+        }
         &::placeholder {
           color: #89815F;
           font-family: 'Montserrat';
@@ -287,9 +319,16 @@ export default {
         margin: 10vh auto !important;
         height: 70vh;
         width: 80vw;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         .info {
           height: 25vh;
           &:nth-of-type(2) {

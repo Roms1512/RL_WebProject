@@ -27,23 +27,49 @@ export default {
 </script>
 
 <style lang="scss">
-
-@keyframes going {
+@-webkit-keyframes going {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    transform: translateX(-70px);
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
     opacity: 0;
+  }
+}
+@keyframes going {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes coming {
+  from {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes coming {
   from {
-    transform: translateX(-70px);
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
@@ -52,11 +78,13 @@ export default {
   width: inherit;
 }
 .router-anim-enter-active {
-  animation: coming 1s;
+  -webkit-animation: coming 1s;
+          animation: coming 1s;
   opacity: 0;
 }
 .router-anim-leave-active {
-  animation: going 1s;
+  -webkit-animation: going 1s;
+          animation: going 1s;
 }
 #app {
   font-family: 'Montserrat', sans-serif;
