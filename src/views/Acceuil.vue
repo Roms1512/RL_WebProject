@@ -4,11 +4,11 @@
       <img src="@/assets/PhotoFond/1.png" alt="Ordinateur">
       <h1>WEB<br>DÉVELOPPEUR</h1>
       <h5>Des technologies qui rassemble, <br>Pour un site web qui vous ressemble</h5>
-      <router-link to="/contact">CONTACT</router-link>
+      <router-link to="/contact" title="Contact">CONTACT</router-link>
     </header>
     <section>
       <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">QUELQUES PROJETS RÉALISÉS<br>PAR NOS SOINS</h2>
-      <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Chaque projet est réalisés sur mesures pour<br>correspondre à vos besoins.<br><span>DEVIS GRATUIT !</span></h5>
+      <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Chaque projet est réalisés sur mesures pour<br>correspondre à vos besoins.</h5>
       <div class="projets">
         <div class="projet" data-aos="fade-in" data-aos-duration="2500" data-aos-offset="350" data-aos-once="true">
           <img src="@/assets/PhotoProjet/1.png" alt="projet 1">
@@ -23,7 +23,7 @@
           <p>Entrainement <br>Reproduction d'une Template</p>
         </div>
       </div>
-      <router-link to="/portefolio" @click="scrollMeTo('portefolio')" class="button">VOIR PLUS</router-link>
+      <router-link to="/portefolio" class="button" title="Portefolio">VOIR PLUS</router-link>
     </section>
     <article>
       <img class="fond" src="@/assets/PhotoFond/2.png" alt="Clavier Ordinateur">
@@ -51,7 +51,7 @@
           </div>
         </div>
       </div>
-      <router-link to="/services">VOIR PLUS</router-link>
+      <router-link to="/services" title="Service">VOIR PLUS</router-link>
     </article>
     <Footer/>
   </div>
@@ -64,23 +64,11 @@ export default {
   name: 'Acceuil',
   components: {
     Footer
-  },
-  methods: {
-    scrollMeTo(refName) {
-      var element = this.$refs[refName];
-      var top = element.offsetTop;
-
-      window.scrollTo(0, top);
-    }
   }
 }
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: Montserrat;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-}
 #acceuil {
   position: absolute;
   width: 100%;

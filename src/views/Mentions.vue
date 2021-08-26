@@ -50,10 +50,6 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: Montserrat;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-}
 #mention {
   height: 100vh;
   background: linear-gradient(to right, #2A2A2A, #010101);

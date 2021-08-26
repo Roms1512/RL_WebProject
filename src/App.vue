@@ -1,15 +1,15 @@
 <template>
     <div id="nav">
-          <div class="logo">
-            <router-link to="/"><p>RL WebProject</p></router-link>
-          </div>
-          <div class="nav-bar">
-            <router-link to="/portefolio">Portefolio</router-link>
-            <router-link to="/services">Services</router-link>
-            <router-link to="/contact">Contact</router-link>
-          </div>
+      <div class="logo">
+        <router-link to="/"><p>RL WebProject</p></router-link>
+      </div>
+      <div class="nav-bar">
+        <router-link to="/portefolio">Portefolio</router-link>
+        <router-link to="/services">Services</router-link>
+        <router-link to="/contact">Contact</router-link>
+      </div>
+      <i @click="scrollToTop()" id="up" class="fas fa-chevron-up" title="Retour vers le Haut"></i>
     </div>
-    <i v-if="!scrollToTop()" id="up" class="fas fa-chevron-up"></i>
     <transition name="router-anim">
       <router-view/>
     </transition>
@@ -20,9 +20,6 @@ export default {
   name: 'Nav',
   methods: {
     scrollToTop() {
-      if (window.scrollTop > 100) {
-        this.$style.display = 'block'
-      }
       window.scrollTo(0,0);
     }
   }
@@ -30,18 +27,6 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face{
-  font-family:"alphacentauri-medium";
-  src:url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("woff"),
-  url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("opentype"),
-  url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("truetype");
-}
-@font-face {
-  font-family: Montserrat;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-}
-
-// @import 'https://cdn.jsdelivr.net/npm/animate.css@3.5.1';
 
 @keyframes going {
   from {
@@ -74,13 +59,10 @@ export default {
   animation: going 1s;
 }
 #app {
-  font-family: Montserrat;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #fff;
     i.fa-chevron-up {
-      display: none;
       cursor: pointer;
       padding: 10px 10px;
       z-index: 50;
@@ -88,13 +70,14 @@ export default {
       bottom: 5vh;
       right: 5vh;
       border-radius: 5px;
-      background: white;
+      background: rgba(255, 255, 255, 0.548);
       font-size: large;
       color: #000;
     }
 }
 
 #nav {
+  position: relative;
   background: transparent;
   height: 18vh;
   width: 100%;
@@ -103,7 +86,6 @@ export default {
   align-items: center;
   padding-left: 4vw;
   padding-right: 5vw;
-  position: relative;
   .logo {
     z-index: 10;
     p {

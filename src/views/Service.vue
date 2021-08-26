@@ -3,6 +3,23 @@
     <header>
       <img src="@/assets/PhotoFond/3.png" alt="Une personne travaillant sur son ordi">
       <h1>SERVICES</h1>
+      <h5>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">D</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="250" data-aos-once="true">E</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true">V</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="750" data-aos-once="true">I</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000" data-aos-once="true">S</p> 
+      </h5>
+      <h5>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1250" data-aos-once="true">G</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" data-aos-once="true">R</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1750" data-aos-once="true">A</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000" data-aos-once="true">T</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2250" data-aos-once="true">U</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2500" data-aos-once="true">I</p>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2750" data-aos-once="true">T</p>
+        <p class="exclamation" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="3000" data-aos-once="true">!</p>
+      </h5>
     </header>
     <section>
       <h5 class="description">
@@ -75,10 +92,6 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: Montserrat;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-}
 #services {
   height: 100vh;
   background: linear-gradient(to right, #2A2A2A, #010101);
@@ -102,6 +115,14 @@ export default {
       font-weight: 600;
       font-size: 100px;
       color: #fff;
+    }
+    h5 {
+      display: flex;
+      font-weight: 300;
+      font-size: x-large;
+      p.exclamation {
+        padding-left: 10px;
+      }
     }
   }
   section {
