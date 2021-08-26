@@ -1,5 +1,5 @@
 <template>
-  <div id="portefolio" class="page">
+  <div id="portefolio" ref="portefolio" class="page">
     <header>
       <img src="@/assets/PhotoFond/6.png" alt="MacBook">
       <h1>PORTEFOLIO</h1>

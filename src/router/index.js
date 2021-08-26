@@ -30,7 +30,7 @@ const routes = [
     path: '/mentions',
     name: 'Mentions',
     component: Mentions
-  }
+  },
 ]
 
 const router = createRouter({

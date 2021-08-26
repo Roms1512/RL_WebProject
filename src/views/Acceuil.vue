@@ -23,7 +23,7 @@
           <p>Entrainement <br>Reproduction d'une Template</p>
         </div>
       </div>
-      <router-link to="/portefolio" class="button">VOIR PLUS</router-link>
+      <router-link to="/portefolio" @click="scrollMeTo('portefolio')" class="button">VOIR PLUS</router-link>
     </section>
     <article>
       <img class="fond" src="@/assets/PhotoFond/2.png" alt="Clavier Ordinateur">
@@ -64,6 +64,14 @@ export default {
   name: 'Acceuil',
   components: {
     Footer
+  },
+  methods: {
+    scrollMeTo(refName) {
+      var element = this.$refs[refName];
+      var top = element.offsetTop;
+
+      window.scrollTo(0, top);
+    }
   }
 }
 </script>

@@ -9,6 +9,7 @@
             <router-link to="/contact">Contact</router-link>
           </div>
     </div>
+    <i v-if="!scrollToTop()" id="up" class="fas fa-chevron-up"></i>
     <transition name="router-anim">
       <router-view/>
     </transition>
@@ -17,7 +18,14 @@
 <script>
 export default {
   name: 'Nav',
-  
+  methods: {
+    scrollToTop() {
+      if (window.scrollTop > 100) {
+        this.$style.display = 'block'
+      }
+      window.scrollTo(0,0);
+    }
+  }
 }
 </script>
 
@@ -65,13 +73,25 @@ export default {
 .router-anim-leave-active {
   animation: going 1s;
 }
-
 #app {
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
+    i.fa-chevron-up {
+      display: none;
+      cursor: pointer;
+      padding: 10px 10px;
+      z-index: 50;
+      position: fixed;
+      bottom: 5vh;
+      right: 5vh;
+      border-radius: 5px;
+      background: white;
+      font-size: large;
+      color: #000;
+    }
 }
 
 #nav {
