@@ -222,9 +222,8 @@ export default {
         img {
           z-index: 20;
           position: relative;
-          height: 25vh;
+          height: 15vh;
           opacity: 1;
-          zoom: 0.5;
         }
         .text-competence {
           text-align: left;
@@ -327,7 +326,7 @@ export default {
       .competences {
         .competence {
           img {
-            height: 20vh;
+            height: 10vh;
           }
           .text-competence {
             h4 {
@@ -456,7 +455,7 @@ export default {
       .competences {
         .competence {
           img {
-            height: 18vh;
+            height: 8vh;
           }
         }
       }

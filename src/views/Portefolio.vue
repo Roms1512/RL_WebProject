@@ -433,6 +433,9 @@ export default {
       h1 {
         font-size: xxx-large;
       }
+      h5 {
+        font-size: large;
+      }
     }
     section {
       .projet {
@@ -479,6 +482,9 @@ export default {
       }
       h1 {
         font-size: xx-large;
+      }
+      h5 {
+        font-size: medium;
       }
     }
     section {

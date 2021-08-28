@@ -147,10 +147,10 @@ export default {
         font-size: large;
       }
       span {
-        font-weight: 400;
+        font-weight: bold;
       }
       a {
-        font-weight: 400;
+        font-weight: bold;
         &.subline {
           -webkit-text-decoration: underline 0.5px;
                   text-decoration: underline 0.5px;
@@ -206,7 +206,7 @@ export default {
           font-size: medium;
           line-height: 2.5vh;
           span, a {
-            font-weight: 400;
+            font-weight: bold;
             &.subline {
               text-decoration: underline;
             }
@@ -246,7 +246,7 @@ export default {
           &.express {
             position: absolute;
             right: 2.5vw;
-            zoom: 2;
+            height: 20vh;
           }
         }
         &:nth-of-type(4) {
@@ -283,7 +283,7 @@ export default {
   @media screen and(max-width: 1024px) {
     header {
       img {
-        zoom: 0.6;
+        height: 60vh;
         top: 20vh;
       }
     }
@@ -315,7 +315,7 @@ export default {
   @media screen and(max-width: 768px) {
     header {
       img {
-        top: 55vh;
+        top: 30vh;
       }
       h1 {
         font-size: 70px;
@@ -330,11 +330,14 @@ export default {
   @media screen and(max-width: 540px), (max-height: 540px) {
     header {
       img {
-        zoom: 0.6 !important;
-        top: 60vh !important;
+        height: 60vh !important;
+        top: 30vh !important;
       }
       h1 {
         font-size: xxx-large;
+      }
+      h5 {
+        font-size: large;
       }
     }
     section {
@@ -370,15 +373,18 @@ export default {
   @media screen and(max-width: 414px), (max-height: 414px) {
     header {
       img {
-        zoom: 0.5;
+        height: 50vh;
         right: -25vw;
       }
       h1 {
         font-size: xx-large;
       }
+      h5 {
+        font-size: medium;
+      }
     }
     section {
-      height: 215vh !important;
+      height: 220vh !important;
       .all-service {
         img {
           height: 40vh;
@@ -413,12 +419,12 @@ export default {
   @media screen and(max-width: 375px) {
     header {
       img {
-        zoom: 0.4 !important;
-        top: 100vh !important;
+        height: 40vh !important;
+        top: 50vh !important;
       }
     }
     section {
-      height: 230vh !important;
+      height: 235vh !important;
       .all-service {
         img {
           height: 35vh;
@@ -449,7 +455,7 @@ export default {
   @media screen and(max-height: 768px) {
     header {
       img {
-        zoom: 0.8;
+        height: 80vh;
         top: 20vh;
       }
     }
@@ -457,6 +463,8 @@ export default {
   @media screen and(max-height: 414px) {
     header {
       img {
+        height: 70vh !important;
+        top: 20vh !important;
         right: 0;
       }
     }

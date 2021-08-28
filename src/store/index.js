@@ -14,7 +14,6 @@ export default createStore({
   },
   mutations: {
     submitForm() {
-
       // Recuperation des éléments
       const form = document.getElementById('contact_form');
 
@@ -60,7 +59,7 @@ export default createStore({
           console.log(message.value),
           console.log('Formulaire Mal Remplit');
         }
-    },
+    }
   },
   actions: {
   },

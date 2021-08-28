@@ -44,8 +44,8 @@
       <h3>SI VOUS AVEZ DES QUESTIONS,<br>ENVOYER NOUS UN MESSAGE</h3>
 
       <!-- Formulaire de Contact -->
-      <form id="contact_form" @submit.prevent="sendEmail">
-        <input type="text"  id="nom" name="user_name" placeholder="NOM, PRÉNOM" aria-label="Nom Prenom" autofocus required>
+      <form method="" id="contact_form" @submit.prevent="sendEmail">
+        <input type="text"  id="nom" name="user_name" placeholder="NOM, PRÉNOM" aria-label="Nom Prenom" required>
         <input type="email" id="email" name="user_email" placeholder="E-MAIL" aria-label="Email" required>
         <select name="sujet" id="sujet" aria-label="Sujet du message" required>
           <option value="">SUJET</option>
@@ -152,7 +152,7 @@ export default {
         height: 12vh;
         line-height: center;
         img {
-          zoom: 0.1;
+          height: 5vh;
         }
         h4 {
           color: #89815F;
@@ -239,7 +239,8 @@ export default {
         border: 1px solid #fff;
         text-align: center;
         &:active {
-          zoom: 0.98;
+          padding: 7.8px 39px;
+          width: 176px;
         }
       }
     }
@@ -250,7 +251,7 @@ export default {
   @media screen and(max-width: 1024px) {
     header {
       img {
-        zoom: 0.6;
+        height: 54vh;
         top: 40vh;
       }
     }
@@ -276,7 +277,7 @@ export default {
   @media screen and(max-width: 768px) {
     header {
       img {
-        top: 60vh;
+        top: 40vh;
       }
       h1 {
         font-size: 70px;
@@ -308,6 +309,9 @@ export default {
     header {
       h1 {
         font-size: xxx-large;
+      }
+      h5 {
+        font-size: large;
       }
     }
     section {
@@ -354,11 +358,14 @@ export default {
   }
   @media screen and(max-width: 414px), (max-height: 414px) {
     header {
+      img {
+        height: 45vh;
+      }
       h1 {
         font-size: xx-large;
       }
-      img {
-        zoom: .5;
+      h5 {
+        font-size: medium;
       }
     }
     section {
@@ -379,15 +386,15 @@ export default {
   @media screen and(max-width: 375px), (max-height: 375px) {
     header {
       img {
-        zoom: 0.4;
-        top: 120vh;
+        height: 36vh;
+        top: 40vh;
       }
     }
     section {
       .info-contact {
         .info {
           img {
-            zoom: 0.08;
+            height: 4vh;
           }
         }
       }
@@ -417,8 +424,8 @@ export default {
   @media screen and(max-height: 414px) {
     header {
       img {
-        zoom: 0.8;
-        right: 20vw;
+        height: 72vh;
+        right: 6vw;
         top: 20vh;
       }
     }
