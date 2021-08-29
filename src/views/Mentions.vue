@@ -8,15 +8,15 @@
       <div class="colonne-1">
         <div class="sous-titre-mention">
           <h4>Éditeur du site</h4>
-          <h5>Entreprise RL WebProject, 05200, Embrun, France Responsable de la publication : LAVAUR Romain</h5>
+          <h5>Entreprise : RL WebProject, 05200, Embrun, France.<br>Responsable de la publication : LAVAUR Romain<br>Contact : romainlavaur@hotmail.com | +33 6 03 74 49 93</h5>
         </div>
         <div class="sous-titre-mention">
           <h4>Hébergement</h4>
-          <h5>Ce site est hébergé par [ Nom Herbergeur ] au capital de [ Argent en € ] RCS Lille Métropole 424 761 419 00045 Siège social : [ Adresse Hebergeur ] - France.</h5>
+          <h5>RL WebProject est hébergé par HOSTINGER, dont le siège social est situé HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos Street, 6023 Larnaca, Chypre.<br>joignable par le moyen suivant : <a class="lien" href="https://www.hostinger.fr/contact.">https://www.hostinger.fr/contact.</a></h5>
         </div>
         <div class="sous-titre-mention">
           <h4>Crédits</h4>
-          <h5>Photos : LAVAUR Romain. Conception et réalisation du site Web : RL WebProject, 2 Impasse des Gentianes, 05200, Embrun.</h5>
+          <h5>Photos : LAVAUR Romain.<br>Conception & réalisation du site Web : RL WebProject, 2 Impasse des Gentianes, 05200, Embrun.</h5>
         </div>
         <div class="sous-titre-mention">
           <h4>Information et libertés</h4>
@@ -45,7 +45,7 @@ export default {
   name: 'Mentions',
   components: {
     Footer
-  }
+  },
 }
 </script>
 
@@ -101,6 +101,9 @@ export default {
         font-weight: 600;
         line-height: 2.3vh;
         font-size: smaller;
+        .lien {
+          text-decoration: underline;
+        }
       }
     }
   }

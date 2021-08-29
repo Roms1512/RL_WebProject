@@ -106,6 +106,12 @@ export default {
 }
 
 #nav {
+  @font-face{
+    font-family:"alphacentauri-medium";
+    src:url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("woff"),
+        url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("opentype"),
+        url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("truetype");
+  }
   position: relative;
   background: transparent;
   height: 18vh;

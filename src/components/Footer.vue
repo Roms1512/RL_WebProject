@@ -13,7 +13,7 @@
         </div>
         
         <div class="mention-legale">
-          <router-link to="/mentions">Mentions Légales</router-link>
+          <router-link to="/mentions" @click="scrollToTop()" title="Mentions Légales">Mentions Légales</router-link>
         </div>
       </div>
       <div class="design">
@@ -26,12 +26,24 @@
 
 <script>
 export default {
-  name: 'footer'
+  name: 'footer',
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0,0);
+    }
+  }
 }
 </script>
 
 <style lang="scss">
 #footer {
+  @font-face{
+    font-family:"alphacentauri-medium";
+    src:url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("woff"),
+        url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("opentype"),
+        url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("truetype");
+  }
+
   background: #89815F;
   height: 17vh;
   padding: 2vh 4vw;

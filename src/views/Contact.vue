@@ -21,6 +21,7 @@
         <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2750" data-aos-once="true">T</p>
         <p class="exclamation" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="3000" data-aos-once="true">!</p>
       </h5>
+      <router-link to="/contact" @click="scrollToForm()" title="Contact" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="3000">CONTACT</router-link>
     </header>
     <section>
       <h2>CONTACTEZ-NOUS</h2>
@@ -41,7 +42,7 @@
           <h5>romainlavaur@hotmail.com</h5>
         </div>
       </div>
-      <h3>SI VOUS AVEZ DES QUESTIONS,<br>ENVOYER NOUS UN MESSAGE</h3>
+      <h3>SI VOUS AVEZ DES QUESTIONS ou BESOIN D'UN DEVIS,<br>ENVOYER NOUS UN MESSAGE</h3>
 
       <!-- Formulaire de Contact -->
       <form method="" id="contact_form" @submit.prevent="sendEmail">
@@ -88,6 +89,9 @@ export default {
         }, (error) => {
             console.log('FAILED...', error);
         });
+    },
+    scrollToForm() {
+      window.scrollTo(0,2000);
     }
   }
 }
@@ -99,6 +103,13 @@ export default {
   background: linear-gradient(to right, #2A2A2A, #010101);
   position: relative;
   top: -18vh;
+  a {
+    padding: 8px 40px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-top: 5vh;
+  }
   header {
     text-align: left;
     margin-left: 10vw;
@@ -127,7 +138,11 @@ export default {
       font-size: x-large;
       p.exclamation {
         padding-left: 10px;
+        margin-bottom: 5vh;
       }
+    }
+    a {
+      margin-left: 110pt;
     }
   }
   section {

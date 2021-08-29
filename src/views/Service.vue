@@ -20,6 +20,7 @@
         <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2750" data-aos-once="true">T</p>
         <p class="exclamation" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="3000" data-aos-once="true">!</p>
       </h5>
+      <router-link to="/contact" @click="scrollToForm()" title="Contact" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="3000">CONTACT</router-link>
     </header>
     <section>
       <h5 class="description">
@@ -87,6 +88,11 @@ export default {
   name: 'Service',
   components: {
     Footer
+  },
+  methods: {
+    scrollToForm() {
+      window.scrollTo(0,2000);
+    }
   }
 }
 </script>
@@ -125,8 +131,16 @@ export default {
       font-weight: 300;
       font-size: x-large;
       p.exclamation {
+        margin-bottom: 5vh;
         padding-left: 10px;
       }
+    }
+    a {
+      padding: 8px 40px;
+      font-weight: bold;
+      border: 1px solid #fff;
+      text-align: center;
+      margin-left: 110pt;
     }
   }
   section {

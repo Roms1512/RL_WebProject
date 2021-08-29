@@ -11,19 +11,19 @@
       <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Chaque projet est réalisés sur mesures pour<br>correspondre à vos besoins.</h5>
       <div class="projets">
         <div class="projet" data-aos="fade-in" data-aos-duration="2500" data-aos-offset="350" data-aos-once="true">
-          <img src="@/assets/PhotoProjet/1.png" alt="projet 1">
+          <router-link to="/portefolio" @click="scrollToTop()" title="Portefolio"><img src="@/assets/PhotoProjet/1.png" alt="projet 1"></router-link>
           <p>Open Classrooms <br>Projet d'écoles, SEO & Référencement</p>
         </div>
         <div class="projet" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="700" data-aos-offset="350" data-aos-once="true">
-          <img src="@/assets/PhotoProjet/3.png" alt="projet 2">
+          <router-link to="/portefolio" @click="scrollToTop()" title="Portefolio"><img src="@/assets/PhotoProjet/3.png" alt="projet 2"></router-link>
           <p>Entrainement <br>Reproduction d'une Template</p>
         </div>
         <div class="projet" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1400" data-aos-offset="350" data-aos-once="true">
-          <img src="@/assets/PhotoProjet/9.png" alt="projet 3">
+          <router-link to="/portefolio" @click="scrollToTop()" title="Portefolio"><img src="@/assets/PhotoProjet/9.png" alt="projet 3"></router-link>
           <p>Entrainement <br>Reproduction d'une Template</p>
         </div>
       </div>
-      <router-link to="/portefolio" class="button" title="Portefolio">VOIR PLUS</router-link>
+      <router-link to="/portefolio" class="button" @click="scrollToTop()" title="Portefolio">VOIR PLUS</router-link>
     </section>
     <article>
       <img class="fond" src="@/assets/PhotoFond/2.png" alt="Clavier Ordinateur">
@@ -51,7 +51,7 @@
           </div>
         </div>
       </div>
-      <router-link to="/services" title="Service">VOIR PLUS</router-link>
+      <router-link to="/services" @click="scrollToTop()" title="Service">VOIR PLUS</router-link>
     </article>
     <Footer/>
   </div>
@@ -64,6 +64,10 @@ export default {
   name: 'Acceuil',
   components: {
     Footer
+  }, methods: {
+    scrollToTop() {
+      window.scrollTo(0,0);
+    }
   }
 }
 </script>
@@ -163,6 +167,11 @@ export default {
              object-position: center top;
           width: 23vw;
           height: 70vh;
+        }
+        a {
+          border: none;
+          padding: 0;
+          margin: 0;
         }
         p {
           position: absolute;

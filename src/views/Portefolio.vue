@@ -20,19 +20,20 @@
         <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2750" data-aos-once="true">T</p>
         <p class="exclamation" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="3000" data-aos-once="true">!</p>
       </h5>
+      <router-link to="/contact" @click="scrollToForm()" title="Contact" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="3000">CONTACT</router-link>
     </header>
     <section>
       <!-- Projet 1 -->
       <div class="projet projet-1">
         <div class="colonne-1" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1000" data-aos-once="true">
-          <img src="@/assets/PhotoProjet/1.png" alt="Projet 1">
+          <img src="@/assets/PhotoProjet/1.png" alt="image part-1">
         </div>
         <div class="colonne-2">
           <div class="img img-1" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1500" data-aos-once="true">
-            <img src="@/assets/PhotoProjet/2.png" alt="Projet 1">
+            <img src="@/assets/PhotoProjet/2.png" alt="image part-2">
           </div>
           <div class="img img-2" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2000" data-aos-once="true">
-            <img src="@/assets/PhotoProjet/2.png" alt="Projet 1">
+            <img src="@/assets/PhotoProjet/2.png" alt="image part-3">
           </div>
           <div class="description-projet" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1500" data-aos-once="true">
             <h4>PROJET 1</h4>
@@ -51,14 +52,14 @@
             <h5><a href="https://roms1512.github.io/TP_01/" target="_blank" title="Waxon">Waxom</a> est un <span>design de site web créer sur EnvatoMarket</span>, que j’ai décidé de coder afin de m’entrainer à reproduire une maquette qu’un designer peut me donner.<br><br>C’est donc pour ça qu’il n’y a qu’une seule page, disons que c’est un <span>site OnePage</span> qui présente toutes sortes de projets.<br><br>Il y a quelques autres projets similaires, et celui ci est <span>uniquement fait pour PC niveau Responsive</span>. Voici le lien de cette page : <a class="subline" href="https://roms1512.github.io/TP_01/" target="_blank" title="Waxon">Waxom</a></h5>
           </div>
           <div class="img img-1" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000" data-aos-once="true">
-            <img src="@/assets/PhotoProjet/5.png" alt="Projet 2">
+            <img src="@/assets/PhotoProjet/5.png" alt="image part-1">
           </div>
           <div class="img img-2" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500" data-aos-once="true">
-            <img src="@/assets/PhotoProjet/4.png" alt="Projet 2">
+            <img src="@/assets/PhotoProjet/4.png" alt="image part-2">
           </div>
         </div>
         <div class="colonne-2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000" data-aos-once="true">
-          <img src="@/assets/PhotoProjet/3.png" alt="Projet 2">
+          <img src="@/assets/PhotoProjet/3.png" alt="image part-3">
         </div>
       </div>
 
@@ -67,7 +68,7 @@
       <!-- Projet 3 -->
       <div class="projet projet-1">
         <div class="colonne-1" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1000" data-aos-once="true">
-          <img src="@/assets/PhotoProjet/6.png" alt="Projet 3">
+          <img src="@/assets/PhotoProjet/6.png" alt="image part-1">
         </div>
         <div class="colonne-2">
           <div class="description-projet" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1500" data-aos-once="true">
@@ -75,10 +76,10 @@
             <h5><a href="https://github.com/Roms1512/LavaurRomain_4_19-12-2020" target="_blank" title="Orinoco">Orinoco</a> est un <span>site eCommerce</span> qui vend des peluches, des meubles et des appareils photo.<br> C’est un projet d’école qui devait m’entrainer à faire un <span>appel à une API</span> existante et à la Manipuler, tous en faisant un <span>formulaire</span> qui servait à accepter ou non la commande.<br><br> Malheureusement comme il n’est pas en ligne, je ne peux que vous faire accéder à mon GitHub et ses fichiers sources, pour pouvoir y jeter un oeil : <a class="subline" href="https://github.com/Roms1512/LavaurRomain_4_19-12-2020" target="_blank" title="Orinoco">Orinoco</a></h5>
           </div>
           <div class="img img-1" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2000" data-aos-once="true">
-            <img src="@/assets/PhotoProjet/8.png" alt="Projet 3">
+            <img src="@/assets/PhotoProjet/8.png" alt="image part-2">
           </div>
           <div class="img img-2" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1500" data-aos-once="true">
-            <img src="@/assets/PhotoProjet/7.png" alt="Projet 3">
+            <img src="@/assets/PhotoProjet/7.png" alt="image part-3">
           </div>
           
         </div>
@@ -90,10 +91,10 @@
       <div class="projet projet-2">
         <div class="colonne-1">
           <div class="img img-1" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500" data-aos-once="true">
-            <img src="@/assets/PhotoProjet/10.png" alt="Projet 4">
+            <img src="@/assets/PhotoProjet/10.png" alt="image part-2">
           </div>
           <div class="img img-2" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000" data-aos-once="true">
-            <img src="@/assets/PhotoProjet/11.png" alt="Projet 4">
+            <img src="@/assets/PhotoProjet/11.png" alt="image part-3">
           </div>
           <div class="description-projet" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500" data-aos-once="true">
             <h4>PROJET 4</h4>
@@ -101,7 +102,7 @@
           </div>
         </div>
         <div class="colonne-2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000"  data-aos-once="true">
-          <img src="@/assets/PhotoProjet/9.png" alt="Projet 4">
+          <img src="@/assets/PhotoProjet/9.png" alt="image part-1">
         </div>
       </div>
     </section>
@@ -116,6 +117,11 @@ export default {
   name: 'Portefolio',
   components: {
     Footer
+  },
+  methods: {
+    scrollToForm() {
+      window.scrollTo(0,2000);
+    }
   }
 }
 </script>
@@ -154,8 +160,16 @@ export default {
       font-weight: 300;
       font-size: x-large;
       p.exclamation {
+        margin-bottom: 5vh;
         padding-left: 10px;
       }
+    }
+    a {
+      padding: 8px 40px;
+      font-weight: bold;
+      border: 1px solid #fff;
+      text-align: center;
+      margin-left: 110pt;
     }
   }
   section {
