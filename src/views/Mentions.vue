@@ -8,15 +8,23 @@
       <div class="colonne-1">
         <div class="sous-titre-mention">
           <h4>Éditeur du site</h4>
-          <h5>Entreprise : RL WebProject, 05200, Embrun, France.<br>Responsable de la publication : LAVAUR Romain<br>Contact : romainlavaur@hotmail.com | +33 6 03 74 49 93</h5>
+          <h5>Entreprise : RL WebProject, 05200, Embrun, France.
+            <br>Responsable de la publication : LAVAUR Romain
+            <br>Contact : romainlavaur@hotmail.com | +33 6 03 74 49 93
+            <br>Identifiant SIREN : 902 422 609 
+          </h5>
         </div>
         <div class="sous-titre-mention">
           <h4>Hébergement</h4>
-          <h5>RL WebProject est hébergé par HOSTINGER, dont le siège social est situé HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos Street, 6023 Larnaca, Chypre.<br>joignable par le moyen suivant : <a class="lien" href="https://www.hostinger.fr/contact.">https://www.hostinger.fr/contact.</a></h5>
+          <h5>RL WebProject est hébergé par HOSTINGER, dont le siège social est situé à, HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos Street, 6023 Larnaca, Chypre.
+            <br>joignable par le moyen suivant : <a class="lien" href="https://www.hostinger.fr/contact.">https://www.hostinger.fr/contact.</a></h5>
         </div>
         <div class="sous-titre-mention">
           <h4>Crédits</h4>
-          <h5>Photos : LAVAUR Romain.<br>Conception & réalisation du site Web : RL WebProject, 2 Impasse des Gentianes, 05200, Embrun.</h5>
+          <h5>Photos : LAVAUR Romain.
+            <br>Conception & réalisation du site Web : RL WebProject, 2 Impasse des Gentianes, 05200, Embrun.
+            <br>Design : BleuMarina
+          </h5>
         </div>
         <div class="sous-titre-mention">
           <h4>Information et libertés</h4>
@@ -26,7 +34,8 @@
       <div class="colonne-2">
         <div class="sous-titre-mention">
           <h4>Liens</h4>
-          <h5>Les liens proposés vers d'autres sites sont communiqués à titre indicatif et ne sauraient engager la responsabilité de l'entraprise RL WebProject tant en ce qui concerne les contenus, les conditions d'accès, que l'usage qu'il peut être fait de ces contenus et de leur éventuelles conséquences. Si les responsables d'un site " cible " souhaitent modifier leur mode de présence sur ce site, ils peuvent en faire la demande en adressant un email auprès du Webmaster. <br>A l'inverse, les liens vers une ou plusieurs page(s) du présent site sont autorisés sous la condition d'en informer le webmaster. L'entreprise' RL WebProject se réserve le droit de demander de retirer les liens à sa discrétion sans devoir en justifier la raison.</h5>
+          <h5>Les liens proposés vers d'autres sites sont communiqués à titre indicatif et ne sauraient engager la responsabilité de l'entraprise RL WebProject tant en ce qui concerne les contenus, les conditions d'accès, que l'usage qu'il peut être fait de ces contenus et de leur éventuelles conséquences. Si les responsables d'un site " cible " souhaitent modifier leur mode de présence sur ce site, ils peuvent en faire la demande en adressant un email auprès du Webmaster. 
+            <br>A l'inverse, les liens vers une ou plusieurs page(s) du présent site sont autorisés sous la condition d'en informer le webmaster. L'entreprise' RL WebProject se réserve le droit de demander de retirer les liens à sa discrétion sans devoir en justifier la raison.</h5>
         </div>
         <div class="sous-titre-mention">
           <h4>Marques déposées</h4>
@@ -63,7 +72,7 @@ export default {
     padding-top: 38vh;
     height: 100vh;
     img {
-      z-index: 10;
+      z-index: 0;
       pointer-events: none;
       position: absolute;
       opacity: 0.62;
@@ -114,6 +123,7 @@ export default {
     header {
       img {
         top: 0;
+        right: -25vh !important;
         height: 100vh;
       }
       h1 {
@@ -126,6 +136,9 @@ export default {
       h1 {
         font-size: 70px;
       }
+      img {
+        right: -100vw !important;
+      }
     }
     section {
       height: 100vh;
@@ -136,9 +149,12 @@ export default {
       h1 {
         font-size: xxx-large;
       }
+      img {
+        right: -60vw !important;
+      }
     }
     section {
-      height: 130vh;
+      height: 150vh;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -159,8 +175,12 @@ export default {
       h1 {
         font-size: xx-large;
       }
+      img {
+        right: -110vw !important;
+      }
     }
     section {
+      height: 160vh;
       .colonne-1, .colonne-2 {
         h4 {
           font-size: medium;
@@ -172,16 +192,33 @@ export default {
     }
   }
   @media screen and(max-width: 375px), (max-height: 375px) {
+    header {
+      img {
+        right: -160vw !important;
+      }
+    }
     section {
-      height: 155vh;
+      height: 170vh;
     }
   }
 
   //***** Max-height *****//
 
-  @media screen and(max-height: 375px) {
+  @media screen and(max-height: 540px) {
+    header {
+      img {
+        right: -30vw !important;
+      }
+    }
+  }
+  @media screen and(max-height: 414px) {
     section {
-      height: 145vh !important;
+      height: 185vh !important;
+      .colonne-1, .colonne-2 {
+        h5 {
+          line-height: 4vh;
+        }
+      }
     }
   }
 }

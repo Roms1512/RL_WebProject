@@ -140,7 +140,7 @@ export default {
     padding-top: 38vh;
     height: 100vh;
     img {
-      z-index: 10;
+      z-index: 0;
       pointer-events: none;
       position: absolute;
       opacity: 0.50;
@@ -500,6 +500,11 @@ export default {
       h5 {
         font-size: medium;
       }
+      a {
+          font-size: x-small !important;
+          padding: 5px 30px;
+          margin-left: 30pt;
+        }
     }
     section {
       .projet {

@@ -382,6 +382,11 @@ export default {
       h5 {
         font-size: medium;
       }
+      a {
+          font-size: x-small !important;
+          padding: 5px 30px;
+          margin-left: 30pt;
+        }
     }
     section {
       h2 {

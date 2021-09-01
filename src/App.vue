@@ -112,6 +112,7 @@ export default {
         url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("opentype"),
         url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("truetype");
   }
+  z-index: 50;
   position: relative;
   background: transparent;
   height: 18vh;
