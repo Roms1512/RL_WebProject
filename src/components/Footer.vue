@@ -37,13 +37,6 @@ export default {
 
 <style lang="scss">
 #footer {
-  @font-face{
-    font-family:"alphacentauri-medium";
-    src:url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("woff"),
-        url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("opentype"),
-        url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("truetype");
-  }
-
   background: #89815F;
   height: 17vh;
   padding: 2vh 4vw;
@@ -56,7 +49,7 @@ export default {
     padding: 0!important;
     h2 {
       letter-spacing: 10pt;
-      font-family: 'AlphaCentauri';
+      font-family: 'alphacentaurimedium';
       font-size: xx-large;
     }
   }

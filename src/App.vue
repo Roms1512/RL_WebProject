@@ -128,12 +128,6 @@ export default {
 }
 
 #nav {
-  @font-face{
-    font-family:"alphacentauri-medium";
-    src:url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("woff"),
-        url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("opentype"),
-        url("https://dafonttop.com/wp-data/a/316/12316/file/Alphacentauri-MVY4p.ttf") format("truetype");
-  }
   z-index: 50;
   position: relative;
   background: transparent;
@@ -148,7 +142,7 @@ export default {
     z-index: 10;
     p {
       color: #89815F;
-      font-family: 'AlphaCentauri';
+      font-family: 'alphacentaurimedium';
       font-size: x-large;
       letter-spacing: 10pt;
     }
