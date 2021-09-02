@@ -1,0 +1,2 @@
+User-Agent: *
+sitemap: https://rl-webproject.com/sitemap.xml

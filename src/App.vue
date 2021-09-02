@@ -74,6 +74,28 @@ export default {
     opacity: 1;
   }
 }
+*, ::after, ::before, *:focus {
+        padding: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        text-decoration: none;
+        letter-spacing: 1.4pt;
+        outline: none;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      html {
+        scroll-behavior: smooth !important;
+      }
+      body {
+        background: #000;
+        overflow-x: hidden !important;
+      }
+      a {
+        color: #fff;
+      }
 .page {
   position: fixed;
   width: inherit;
