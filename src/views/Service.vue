@@ -20,7 +20,7 @@
         <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2750" data-aos-once="true">T</p>
         <p class="exclamation" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="3000" data-aos-once="true">!</p>
       </h5>
-      <router-link to="/contact" @click="scrollToForm()" title="Contact" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="3000">CONTACT</router-link>
+      <router-link to="/contact" @click="scrollToForm()" title="Contact" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="3000" data-aos-once="true">CONTACT</router-link>
     </header>
     <section>
       <h5 class="description">
@@ -41,10 +41,9 @@
         </div>
         <div class="single-service" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="800" data-aos-once="true">
           <h4>Site Sur Mesure</h4>
-          <h5>La réalisation de votre <span>site web sur-mesure</span> vous permet de créer un <span>site unique</span> en <span>termes de fonctionnalités</span>. De cette manière, vous pouvez <span>présenter très précisément</span> vos <span>produits</span> ou <span>services</span> ou encore <span>automatiser certaines actions</span>.<br>
-          <span class="bold">Avantage</span> :<br>
-            -	Vous avez <span>carte blanche avec le designer</span> qui prendra en compte toutes vos demandes concernant <span>le design</span>, <span>les animations</span>, <span>les fonctionnalités</span>, etc… .<br>
-            -	Vous aurez également si besoin est, <span>les services</span> de notre <a title="Cliquer ici pour voir ces photos" class="subline" href="https://www.instagram.com/lenylaurenti/" target="__blank">Photographe/Vidéaste</a>.</h5>
+          <h5>La réalisation de votre <span>site web sur-mesure</span> vous permet de créer un <span>site unique</span> en <span>termes de fonctionnalités</span>. De cette manière, vous pouvez <span>présenter très précisément</span> vos <span>produits</span> ou <span>services</span> ou encore <span>automatiser certaines actions</span>.<br><br>
+            &#10004;	Vous avez <span>carte blanche avec le designer</span> qui prendra en compte toutes vos demandes concernant <span>le design</span>, <span>les animations</span>, <span>les fonctionnalités</span>, etc…<br><br>
+            &#10004;	Vous aurez également si besoin est, <span>les services</span> de notre <a title="Cliquer ici pour voir ces photos" class="subline" href="https://www.instagram.com/lenylaurenti/" target="__blank">Photographe/Vidéaste</a>.</h5>
         </div>
       </div>
     </section>
@@ -145,7 +144,7 @@ export default {
   }
   section {
     background: #0E0E0E;
-    height: 160vh;
+    height: 162vh;
     h5 {
       text-align: left;
       font-weight: 300;
@@ -403,7 +402,7 @@ export default {
         }
     }
     section {
-      height: 220vh !important;
+      height: 225vh !important;
       .all-service {
         img {
           height: 40vh;
@@ -443,7 +442,6 @@ export default {
       }
     }
     section {
-      height: 235vh !important;
       .all-service {
         img {
           height: 35vh;
@@ -455,6 +453,9 @@ export default {
             height: 40vh;
             right: -55vw;
           }
+        }
+        .single-service {
+          width: 58vw;
         }
       }
       .description {
