@@ -8,7 +8,7 @@
     </header>
     <section>
       <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">QUELQUES PROJETS RÉALISÉS<br>PAR NOS SOINS</h2>
-      <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Chaque projet est réalisés sur mesures pour<br>correspondre à vos besoins.</h5>
+      <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Chaque projet est réalisé sur-mesure pour<br>correspondre à vos besoins.</h5>
       <div class="projets">
         <div class="projet" data-aos="fade-in" data-aos-duration="2500" data-aos-offset="350" data-aos-once="true">
           <router-link to="/portefolio" @click="scrollToTop()" title="Portefolio"><img src="@/assets/PhotoProjet/1.png" alt="projet 1"></router-link>

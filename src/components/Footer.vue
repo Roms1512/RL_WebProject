@@ -1,9 +1,9 @@
 <template>
   <div id="footer">
-    <router-link to="/" class="logo"><h2>RL WEBPROJECT</h2></router-link>
+    <router-link to="/" @click="scrollToTop()" class="logo"><h2>RL WEBPROJECT</h2></router-link>
     <div class="reseaux">
       <a class="icon" href="https://www.facebook.com/romain.lavaur.3/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
-      <a class="icon" href="https://www.instagram.com/romain_lavaur_off/?hl=fr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a class="icon" href="https://www.instagram.com/romain_lavaur/?hl=fr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
     <div class="droit">
       <div class="copyright">

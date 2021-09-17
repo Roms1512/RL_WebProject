@@ -34,7 +34,7 @@
         <div class="info">
           <img src="@/assets/Icon/2.png" alt="Icon Point de Localisation">
           <h4>ADRESSE</h4>
-          <h5>2 Impasses les Gentianes<br>05200 Embrun</h5>
+          <h5>2 Impasse les Gentianes<br>05200 Embrun</h5>
         </div>
         <div class="info">
           <img src="@/assets/Icon/3.png" alt="Icon Enveloppe">
@@ -42,7 +42,7 @@
           <h5>romainlavaur@hotmail.com</h5>
         </div>
       </div>
-      <h3>SI VOUS AVEZ DES QUESTIONS ou BESOIN D'UN DEVIS,<br>ENVOYER NOUS UN MESSAGE</h3>
+      <h3>SI VOUS AVEZ DES QUESTIONS ou BESOIN D'UN DEVIS,<br>ENVOYEZ NOUS UN MESSAGE</h3>
 
       <!-- Formulaire de Contact -->
       <form method="" id="contact_form" @submit.prevent="sendEmail">

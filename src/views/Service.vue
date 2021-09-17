@@ -23,8 +23,8 @@
       <router-link to="/contact" @click="scrollToForm()" title="Contact" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="3000" data-aos-once="true">CONTACT</router-link>
     </header>
     <section>
-      <h5 class="description">
-        <span class="debut">RL WebProject :</span> Nous sommes actuellement une micro-entreprise de développement web basé à <span>Embrun</span>, au cœur des <span>Hautes Alpes</span>.<br>
+      <h5 class="description" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <span class="debut">RL WebProject :</span> Nous sommes actuellement une micro-entreprise de développement web basée à <span>Embrun</span>, au cœur des <span>Hautes Alpes</span>.<br>
         Nous vous proposons un service de <span>Création</span> ou de <span>Reprise</span> de Site Web avec l’assurance de respecter les <span>recommandations SEO de Google</span>. Nous travaillons en étroite collaboration avec des <span>designers freelance</span> et un <a class="subline" title="Cliquer ici pour voir ces photos" href="https://www.instagram.com/lenylaurenti/" target="__blank">photographe / vidéaste Professionnel</a>, ce qui nous permet de vous garantir un <span>design moderne</span> avec des <a title="Cliquer ici pour voir ces photos" href="https://www.instagram.com/lenylaurenti/" target="__blank">photos et des vidéos de grande qualité</a>.
       </h5>
       <div class="all-service">
